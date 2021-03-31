@@ -5,7 +5,9 @@
     </div>
     <div class="posts">
       <div v-for="post in posts" :key="post._id">
-        <h2><a :href="post.slug.current" v-text="post.title" /></h2>
+        <h2>
+          <NuxtLink :to="post.slug.current">{{ post.title }} </NuxtLink>
+        </h2>
         <div class="summary">
           <block-content
             v-if="post.body.length"
