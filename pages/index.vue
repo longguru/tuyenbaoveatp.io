@@ -1,63 +1,43 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">tuyenbaoveatp.io</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+      <h1 class="title">My Blog</h1>
+    </div>
+    <div class="posts">
+      <div v-for="post in posts" :key="post._id">
+        <h2><a :href="post.slug.current" v-text="post.title" /></h2>
+        <div class="summary">
+          <block-content
+            v-if="post.body.length"
+            :key="post.body[0]._id"
+            :blocks="post.body[0]"
+          />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import { groq } from '@nuxtjs/sanity'
+export default {
+  async asyncData({ $sanity }) {
+    const query = groq`*[_type == "post"]`
+    const posts = await $sanity.fetch(query)
+    return { posts }
+  },
+}
 </script>
 
 <style>
 .container {
-  margin: 0 auto;
+  margin: 2rem;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.posts {
+  margin: 2rem 0;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.summary {
+  margin-top: 0.5rem;
 }
 </style>
