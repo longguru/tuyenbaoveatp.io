@@ -1,19 +1,9 @@
 <template>
-  <div class="container">
-    <div>
-      <h1 class="title">My Blog</h1>
-    </div>
-    <div class="posts">
-      <div v-for="post in posts" :key="post._id">
-        <h2>
-          <NuxtLink :to="post.slug.current">{{ post.title }} </NuxtLink>
-        </h2>
-        <div class="summary">
-          <block-content
-            v-if="post.body.length"
-            :key="post.body[0]._id"
-            :blocks="post.body[0]"
-          />
+  <div class="blog-standard">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <Post v-for="post in posts" :key="post._id" :post="post" />
         </div>
       </div>
     </div>
@@ -22,7 +12,11 @@
 
 <script>
 import { groq } from '@nuxtjs/sanity'
+import Post from '~/components/Post'
 export default {
+  components: {
+    Post,
+  },
   async asyncData({ $sanity }) {
     const query = groq`*[_type == "post"]`
     const posts = await $sanity.fetch(query)
@@ -30,16 +24,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.container {
-  margin: 2rem;
-  min-height: 100vh;
-}
-.posts {
-  margin: 2rem 0;
-}
-.summary {
-  margin-top: 0.5rem;
-}
-</style>
