@@ -1,11 +1,12 @@
 <template>
   <div class="post">
-    <div class="image">
-      <img
-        src="~/assets/images/blog/standard-listing/1.jpg"
-        class="img-responsive"
-        alt=""
-      />
+    <!-- {{ post }} -->
+    <div v-if="post.imageId" class="image">
+      <SanityImage :asset-id="post.imageId" auto="format">
+        <template #default="{ src }">
+          <img :src="src" class="img-responsive" :alt="post.title" />
+        </template>
+      </SanityImage>
     </div>
     <h1>{{ post.title }}</h1>
     <div class="meta clearfix">

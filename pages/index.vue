@@ -18,7 +18,7 @@ export default {
     Post,
   },
   async asyncData({ $sanity }) {
-    const query = groq`*[_type == "post"]`
+    const query = groq`*[_type == "post"]{_id, title, body, slug, 'imageId': mainImage.asset->_id}`
     const posts = await $sanity.fetch(query)
     return { posts }
   },
