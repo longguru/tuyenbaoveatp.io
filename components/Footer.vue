@@ -4,7 +4,10 @@
       <!-- Row 1 Starts -->
       <div class="row row1">
         <div class="col-lg-9 col-md-9 col-sm-9">
-          <img src="~/assets/images/logo/footer-logo.png" alt="" />
+          <!-- <img src="~/assets/images/logo/footer-logo.png" alt="" /> -->
+          <h2 class="mau-trang">
+            Công ty Bảo Vệ An Thịnh Phát - Tuyển dụng bảo vệ
+          </h2>
         </div>
         <!-- Social Icons Starts -->
         <div class="col-lg-3 col-md-3 col-sm-3">
@@ -13,7 +16,11 @@
               <a href=""><i class="fa fa-twitter"></i></a>
             </li>
             <li>
-              <a href=""><i class="fa fa-facebook"></i></a>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/tuyenbaoveanthinhphat/"
+                ><i class="fa fa-facebook"></i
+              ></a>
             </li>
             <li>
               <a href=""><i class="fa fa-instagram"></i></a>
@@ -117,6 +124,12 @@
             Lorem ipsum dolor sit amet, consect etuer elit, sed diam nonu mmy
             nibh euismod tincidunt ut laoreet dolore Lorem ipsum dolor sit amet.
           </div>
+          <!-- Your Chat Plugin code -->
+          <div
+            class="fb-customerchat"
+            attribution="setup_tool"
+            page_id="110994124405341"
+          ></div>
         </div>
         <!-- About Us Ends -->
       </div>

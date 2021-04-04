@@ -15,17 +15,22 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/"
-          ><img
-            src="~/assets/images/logo/logo-1.png"
+        <nuxt-link class="navbar-brand" to="/">
+          <strong class="mau-trang mt-5">AN THỊNH PHÁT TUYỂN DỤNG</strong>
+        </nuxt-link>
+        <!-- <a class="navbar-brand" href="/">
+          <img
+            src="~/assets/images/tuyen-dung-bao-ve.png"
             width="150"
             height="50"
             alt=""
-        /></a>
+          /> 
+          <strong>AN THỊNH PHÁT TUYỂN DỤNG</strong>
+        </a>-->
       </div>
       <div id="navbar-02" class="navbar-collapse collapse">
         <ul class="nav navbar-nav right">
-          <li><a href="#">Contact</a></li>
+          <li><nuxt-link to="/">Liên hệ</nuxt-link></li>
         </ul>
       </div>
     </div>

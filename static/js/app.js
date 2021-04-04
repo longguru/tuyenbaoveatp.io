@@ -48,3 +48,21 @@ $(window).scroll(function () {
     $('.navigation-26.fill-white-overlay').addClass('normal')
   }
 })
+
+window.fbAsyncInit = function () {
+  FB.init({
+    xfbml: true,
+    version: 'v10.0',
+  })
+}
+$(document).ready(function () {
+  ;(function (d, s, id) {
+    let js
+    const fjs = d.getElementsByTagName(s)[0]
+    if (d.getElementById(id)) return
+    js = d.createElement(s)
+    js.id = id
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js'
+    fjs.parentNode.insertBefore(js, fjs)
+  })(document, 'script', 'facebook-jssdk')
+})
