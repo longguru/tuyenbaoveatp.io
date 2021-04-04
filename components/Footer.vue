@@ -50,7 +50,9 @@
           <h1>Tin tuyển dụng mới nhất</h1>
           <ul>
             <li v-for="job in jobs" :key="job._id">
-              <nuxt-link :to="job.slug.current">{{ job.title }}</nuxt-link>
+              <nuxt-link :to="'/' + job.slug.current">{{
+                job.title
+              }}</nuxt-link>
             </li>
           </ul>
         </div>
