@@ -65,7 +65,7 @@
           <ul>
             <li class="clearfix">
               <div class="picture">
-                <img src="images/blog/footer/1.jpg" alt="" />
+                <img src="~/assets/images/blog/footer/1.jpg" alt="" />
               </div>
               <div class="info">
                 <div class="caption">
@@ -76,7 +76,7 @@
             </li>
             <li class="clearfix">
               <div class="picture">
-                <img src="images/blog/footer/2.jpg" alt="" />
+                <img src="~/assets/images/blog/footer/2.jpg" alt="" />
               </div>
               <div class="info">
                 <div class="caption">
@@ -87,7 +87,7 @@
             </li>
             <li class="clearfix">
               <div class="picture">
-                <img src="images/blog/footer/3.jpg" alt="" />
+                <img src="~/assets/images/blog/footer/3.jpg" alt="" />
               </div>
               <div class="info">
                 <div class="caption">
@@ -98,7 +98,7 @@
             </li>
             <li class="clearfix">
               <div class="picture">
-                <img src="images/blog/footer/4.jpg" alt="" />
+                <img src="~/assets/images/blog/footer/4.jpg" alt="" />
               </div>
               <div class="info">
                 <div class="caption">

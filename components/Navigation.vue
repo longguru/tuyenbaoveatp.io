@@ -15,7 +15,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="home-01.html"
+        <a class="navbar-brand" href="/"
           ><img
             src="~/assets/images/logo/logo-1.png"
             width="150"
@@ -25,7 +25,7 @@
       </div>
       <div id="navbar-02" class="navbar-collapse collapse">
         <ul class="nav navbar-nav right">
-          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </div>
