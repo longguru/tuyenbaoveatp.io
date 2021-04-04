@@ -10,14 +10,14 @@
     <h1>{{ post.title }}</h1>
     <div class="meta clearfix">
       <ul>
-        <li>by <a href="">Admin</a></li>
-        <li>in <a href="">Photoshop, Website Design</a></li>
-        <li>posted 31 May, 2015</li>
-        <li><a href="">17 Comments</a></li>
-        <li>Likes 299</li>
+        <li>tìm việc <a href="">Tuyển bảo vệ An Thịnh Phát</a></li>
+        <li>việc làm <a href="">Bảo Vệ Vĩnh Phúc</a></li>
+        <li>ngày {{ new Date().toLocaleDateString() }}</li>
+        <li><a href="">17 Hồ sơ</a></li>
+        <li>Quan tâm 299</li>
       </ul>
       <div class="share-this">
-        <i class="fa fa-share-alt"></i> <a href="">Share this post</a>
+        <i class="fa fa-share-alt"></i> <a href="">Chia sẻ việc làm</a>
       </div>
     </div>
     <div class="description">

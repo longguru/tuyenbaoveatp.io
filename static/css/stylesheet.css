@@ -76313,3 +76313,36 @@ section {
 .mau-trang {
     color: #fff;
 }
+
+.call-mobile {
+    background: #ED1C24;
+    position: fixed;
+    bottom: 10px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 0px 0 0px;
+    border-radius: 40px;
+    color: #fff;
+    left: 20px;
+    z-index: 99999;
+}
+
+.call-mobile a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.call-mobile i {
+    font-size: 20px;
+    line-height: 40px;
+    background: #B52026;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    float: right;
+}

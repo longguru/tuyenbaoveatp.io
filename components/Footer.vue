@@ -37,38 +37,27 @@
       <div class="row row2">
         <!-- Tags Starts -->
         <div class="col-lg-3 col-md-6 col-sm-6 clearfix tags">
-          <h1>Tags</h1>
+          <h1>Từ khóa tìm kiếm</h1>
           <ul>
-            <li><a href="">agency</a></li>
-            <li><a href="">blog</a></li>
-            <li><a href="">business</a></li>
-            <li><a href="">clean</a></li>
-            <li><a href="">creative</a></li>
-            <li><a href="">modern</a></li>
-            <li><a href="">layout</a></li>
-            <li><a href="">multi-purpose</a></li>
-            <li><a href="">portfolio</a></li>
-            <li><a href="">retina</a></li>
-            <li><a href="">blog</a></li>
+            <li v-for="(tuKhoa, index) in tuKhoas" :key="index">
+              <a href="#">{{ tuKhoa }}</a>
+            </li>
           </ul>
         </div>
         <!-- Tags Ends -->
         <!-- Recent Posts Starts -->
         <div class="col-lg-3 col-md-6 col-sm-6 recent-posts">
-          <h1>Recent Posts</h1>
+          <h1>Tin tuyển dụng mới nhất</h1>
           <ul>
-            <li><a href="">Needed a redesign of their site</a></li>
-            <li><a href="">Maximise conversions</a></li>
-            <li><a href="">Arts For India’s mission is </a></li>
-            <li><a href="">Young Indian people, and lead</a></li>
-            <li><a href="">Poverty for them</a></li>
-            <li><a href="">In Art and Creative Design</a></li>
+            <li v-for="job in jobs" :key="job._id">
+              <nuxt-link :to="job.slug.current">{{ job.title }}</nuxt-link>
+            </li>
           </ul>
         </div>
         <!-- Recent Posts Ends -->
         <!-- From Blog Starts -->
         <div class="col-lg-3 col-md-6 col-sm-6 from-blog">
-          <h1>From Blog</h1>
+          <h1>Xin làm bảo vệ</h1>
           <ul>
             <li class="clearfix">
               <div class="picture">
@@ -76,42 +65,11 @@
               </div>
               <div class="info">
                 <div class="caption">
-                  <a href="">Needed a redesign of their site</a>
+                  <a href="">Tôi ở Vĩnh Phúc xin làm bảo vệ được không?</a>
                 </div>
-                <div class="date">Dec 25 2011</div>
-              </div>
-            </li>
-            <li class="clearfix">
-              <div class="picture">
-                <img src="~/assets/images/blog/footer/2.jpg" alt="" />
-              </div>
-              <div class="info">
-                <div class="caption">
-                  <a href="">Needed a redesign of their site</a>
+                <div class="date">
+                  Ngày đăng {{ new Date().toLocaleDateString() }}
                 </div>
-                <div class="date">Dec 25 2011</div>
-              </div>
-            </li>
-            <li class="clearfix">
-              <div class="picture">
-                <img src="~/assets/images/blog/footer/3.jpg" alt="" />
-              </div>
-              <div class="info">
-                <div class="caption">
-                  <a href="">Needed a redesign of their site</a>
-                </div>
-                <div class="date">Dec 25 2011</div>
-              </div>
-            </li>
-            <li class="clearfix">
-              <div class="picture">
-                <img src="~/assets/images/blog/footer/4.jpg" alt="" />
-              </div>
-              <div class="info">
-                <div class="caption">
-                  <a href="">Needed a redesign of their site</a>
-                </div>
-                <div class="date">Dec 25 2011</div>
               </div>
             </li>
           </ul>
@@ -119,10 +77,22 @@
         <!-- From Blog Ends -->
         <!-- About Us Starts -->
         <div class="col-lg-3 col-md-6 col-sm-6 about">
-          <h1>About Unity</h1>
+          <h1>Tuyển dụng bảo vệ</h1>
           <div class="description">
-            Lorem ipsum dolor sit amet, consect etuer elit, sed diam nonu mmy
-            nibh euismod tincidunt ut laoreet dolore Lorem ipsum dolor sit amet.
+            <strong
+              >Công Ty TNHH Dịch Vụ Bảo Vệ An Thịnh Phát, Mã số thuế:
+              2500493741, Địa chỉ: Số nhà 38, Tổ 7, Phường Trưng Trắc, Thị xã
+              Phúc Yên, Tỉnh Vĩnh Phúc:</strong
+            ><br />
+            <strong>Cần tuyển dụng</strong>
+            <em>nhân viên an ninh bảo vệ</em> tòa nhà, siêu thị, nhà máy làm
+            việc tại KCN Khai Quang, Vĩnh Yên, KCN Bình Xuyên, Vĩnh Phúc hoặc
+            KCN Bá Thiện, Vĩnh Phúc. Khu vực Phúc Yên. KCN Quang Minh, Mê Linh,
+            Hà Nội
+          </div>
+          <div class="call-mobile">
+            <a id="callnowbutton" href="tel:0374638603">037 463 86 03</a
+            ><i class="fa fa-phone"></i>
           </div>
           <!-- Your Chat Plugin code -->
           <div
@@ -137,3 +107,63 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      jobs: [
+        {
+          _id: '29a39648-4731-4f86-8ecc-8fb2771de26b',
+          slug: {
+            _type: 'slug',
+            current: 'tuyen-dung-05-bao-ve-nha-may-tai-kcn-khai-quang',
+          },
+          title:
+            'Tuyển dụng 05 nhân viên bảo vệ nhà máy tại KCN Khai Quang - Vĩnh Yên - Vĩnh Phúc',
+        },
+        {
+          _id: '44384eba-45a7-4089-bbc7-54ac22c5a78e',
+          slug: {
+            _type: 'slug',
+            current: 'tuyen-bao-ve-tai-vinh-tuong',
+          },
+          title:
+            'Tuyển 03 nam/nữ làm nhân viên bảo vệ tại Vĩnh Tường – Vĩnh Phúc',
+        },
+        {
+          _id: 'f3c39e0b-8346-4af5-bc4c-0e9d51b5db6d',
+          slug: {
+            _type: 'slug',
+            current:
+              'tuyen-bao-ve-tai-ha-noi-tim-viec-lam-bao-ve-chinh-thuc-thoi-vu',
+          },
+          title:
+            'Tuyển bảo vệ tại Hà Nội, tìm việc làm bảo vệ chính thức thời vụ',
+        },
+      ],
+      tuKhoas: [
+        'tuyển bảo vệ',
+        'việc làm bảo vệ',
+        'tìm việc làm bảo vệ',
+        'tuyển bảo vệ hà nội',
+        'việc làm bảo vệ tại hà nội',
+        'tìm việc bảo vệ',
+        'làm bảo vệ',
+        'tuyển nhân viên bảo vệ',
+        'tuyển dụng bảo vệ',
+        'tuyển bảo vệ nội bộ',
+        'tìm việc làm bảo vệ nội bộ',
+        'cần tuyển bảo vệ ca đêm',
+        'cần tuyển bảo vệ',
+        'tuyển bảo vệ ca 8 tiếng tại hà nội',
+        'tuyển bảo vệ trường học',
+        'bảo vệ nội bộ',
+        'tuyển bảo vệ lương cao',
+        'tim viec lam bao ve',
+        'bao ve noi bo',
+        'nhân viên bảo vệ',
+      ],
+    }
+  },
+}
+</script>

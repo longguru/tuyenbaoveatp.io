@@ -49,17 +49,19 @@ $(window).scroll(function () {
   }
 })
 
-window.fbAsyncInit = function () {
-  FB.init({
-    xfbml: true,
-    version: 'v10.0',
-  })
-}
 $(document).ready(function () {
+  window.fbAsyncInit = function () {
+    FB.init({
+      xfbml: true,
+      version: 'v10.0',
+    })
+  }
   ;(function (d, s, id) {
     let js
     const fjs = d.getElementsByTagName(s)[0]
-    if (d.getElementById(id)) return
+    if (d.getElementById(id)) {
+      return
+    }
     js = d.createElement(s)
     js.id = id
     js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js'
