@@ -24,3 +24,9 @@ export default {
   },
 }
 </script>
+<style scoped>
+.blog-standard {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+</style>

@@ -124,3 +124,228 @@
     </div>
   </div>
 </template>
+<style scoped>
+.footer-06 {
+  background-color: #212121;
+}
+
+.footer-06 .row1 {
+  padding-top: 40px;
+
+  padding-bottom: 40px;
+
+  border-bottom-width: 1px;
+
+  border-bottom-style: solid;
+
+  border-bottom-color: #2c2c2c;
+}
+
+.footer-06 ul.social-icons {
+  margin: 0px;
+
+  padding-top: 5px;
+
+  padding-right: 0px;
+
+  padding-bottom: 0px;
+
+  padding-left: 0px;
+}
+
+.footer-06 ul.social-icons li {
+  font-size: 24px;
+
+  color: #fff;
+
+  display: inline-block;
+
+  list-style-type: none;
+
+  margin-right: 6px;
+
+  margin-left: 6px;
+
+  text-align: center;
+
+  line-height: 1.5;
+}
+
+.footer-06 ul.social-icons li a {
+  color: #fff;
+}
+
+.footer-06 ul.social-icons li a:hover {
+  color: #333;
+}
+
+.footer-06 .row2 {
+  padding-top: 60px;
+
+  padding-bottom: 60px;
+}
+
+.footer-06 .row2 h1 {
+  font-size: 14px;
+
+  color: #fff;
+
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+
+  margin-top: 0px;
+
+  padding-top: 0px;
+
+  margin-bottom: 30px;
+}
+
+.footer-06 .row2 .description {
+  font-size: 14px;
+
+  color: #999;
+}
+
+.footer-06 .row2 .recent-posts ul {
+  padding: 0px;
+
+  margin: 0px;
+}
+
+.footer-06 .row2 .recent-posts ul li {
+  font-weight: 500;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  list-style-type: none;
+
+  padding-bottom: 6px;
+
+  border-bottom-width: 1px;
+
+  border-bottom-style: solid;
+
+  border-bottom-color: #454545;
+}
+
+.footer-06 .row2 .recent-posts ul li a {
+  color: #999999;
+}
+
+.footer-06 .row2 .recent-posts ul li a:hover {
+  color: #fff;
+
+  text-decoration: none;
+}
+
+.footer-06 .row2 .recent-posts ul li a:before {
+  display: inline-block;
+
+  font: normal normal normal 14px/1 FontAwesome;
+
+  font-size: inherit;
+
+  text-rendering: auto;
+
+  -webkit-font-smoothing: antialiased;
+
+  -moz-osx-font-smoothing: grayscale;
+
+  content: '\f105';
+
+  padding-right: 12px;
+
+  color: #039be5;
+}
+
+.footer-06 .row2 .from-blog ul {
+  padding: 0px;
+
+  margin: 0px;
+}
+
+.footer-06 .row2 .from-blog ul li {
+  font-weight: 500;
+
+  font-size: 12px;
+
+  list-style-type: none;
+
+  margin-bottom: 10px;
+
+  padding-top: 0px;
+}
+
+.footer-06 .row2 .from-blog ul li .picture {
+  float: left;
+
+  margin-right: 10px;
+}
+
+.footer-06 .row2 .from-blog ul li .info {
+  padding-left: 75px;
+}
+
+.footer-06 .row2 .from-blog ul li .info .caption {
+  line-height: 1;
+}
+
+.footer-06 .row2 .from-blog ul li .info .date {
+  color: #039be5;
+}
+
+.footer-06 .row2 .from-blog ul li a {
+  color: #999999;
+
+  line-height: normal;
+}
+
+.footer-06 .row2 .from-blog ul li a:hover {
+  color: #fff;
+
+  text-decoration: none;
+}
+
+.footer-06 .row2 .tags ul {
+  padding: 0px;
+
+  margin: 0px;
+}
+
+.footer-06 .row2 .tags ul li {
+  display: inline-block;
+
+  /* float: left; */
+}
+
+.footer-06 .row2 .tags ul li a {
+  font-size: 12px;
+
+  color: #fff;
+
+  background-color: #454545;
+
+  padding-top: 0px;
+
+  padding-right: 8px;
+
+  padding-bottom: 0px;
+
+  padding-left: 8px;
+
+  display: inline-block;
+
+  margin-right: 2px;
+
+  margin-bottom: 2px;
+}
+
+.footer-06 .row2 .tags ul li a:hover {
+  background-color: #039be5;
+
+  text-decoration: none;
+}
+</style>

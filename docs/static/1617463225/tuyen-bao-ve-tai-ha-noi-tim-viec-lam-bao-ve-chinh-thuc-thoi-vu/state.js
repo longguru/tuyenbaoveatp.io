@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"https:\u002F\u002Ftuyenbaoveatp.ga\u002Fstatic\u002F1617463225",layout:"default",error:null,serverRendered:true,routePath:"\u002Ftuyen-bao-ve-tai-ha-noi-tim-viec-lam-bao-ve-chinh-thuc-thoi-vu",config:{app:{basePath:a,assetsPath:a,cdnURL:"https:\u002F\u002Ftuyenbaoveatp.ga\u002F"}}}}("\u002F"));
