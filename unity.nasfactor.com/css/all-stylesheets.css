@@ -19,53 +19,54 @@ Primary use:	Multi-Purpose
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700);
 
 /* Bootstrap v3.3.5 */
-@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+@import url("bootstrap/bootstrap.min.css");
 
 /* Main Stylesheet */
-@import url('~/assets/css/stylesheet.css');
+@import url("stylesheet.css");
 
 /* Items Animation */
-/* @import url('~/assets/css/animations/animate.min.css'); */
+@import url("animations/animate.min.css");
 
 /* spinkit */
-/* @import url('~/assets/css/spinkit/spinkit.css'); */
+@import url("spinkit/spinkit.css");
 
 /* Yamm styles */
-/* @import url('~/assets/css/yamm/yamm.css'); */
+@import url("yamm/yamm.css");
 
 /* Bootstrap Equal Height */
-/* @import url('~/assets/css/equal-height-columns.css'); */
+@import url("equal-height-columns.css");
+
 
 /* REVOLUTION STYLE SHEETS */
-/* @import url('~/assets/revolution/css/settings.css');
-@import url('~/assets/revolution/css/layers.css');
-@import url('~/assets/revolution/css/navigation.css');
-@import url('~/assets/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css');
-@import url('~/assets/revolution/fonts/font-awesome/css/font-awesome.min.css'); */
+@import url("../revolution/css/settings.css");
+@import url("../revolution/css/layers.css");
+@import url("../revolution/css/navigation.css");
+@import url("../revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css");
+@import url("../revolution/fonts/font-awesome/css/font-awesome.min.css");
 
 /* Overlay Menu[2] */
-/* @import url('~/assets/js/overlay-menu/css/style12.css'); */
+@import url("../js/overlay-menu/css/style12.css");
 
 /* Magnific Popup core CSS file */
-/* @import url('~/assets/js/magnific-popup/magnific-popup.css'); */
+@import url("../js/magnific-popup/magnific-popup.css");
 
 /* Flex Slider */
-/* @import url('~/assets/css/flexslider/flexslider.css'); */
+@import url("flexslider/flexslider.css");
 
 /* Owl Carousel */
-/* @import url('~/assets/js/owl-carousel/owl.carousel.css');
-@import url('~/assets/js/owl-carousel/owl.theme.default.min.css');
-@import url('~/assets/js/owl-carousel/owl.carousel-pagination.css');
-@import url('~/assets/js/owl-carousel/owl.theme-pagination.css'); */
+@import url("../js/owl-carousel/owl.carousel.css");
+@import url("../js/owl-carousel/owl.theme.default.min.css");
+@import url("../js/owl-carousel/owl.carousel-pagination.css");
+@import url("../js/owl-carousel/owl.theme-pagination.css");
 
 /* FontAwesome */
-@import url('~/assets/fonts/font-awesome/css/font-awesome.min.css');
+@import url("../fonts/font-awesome/css/font-awesome.min.css");
 
 /* Font Pe Icons Stroke */
-/* @import url('~/assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css'); */
+@import url("../fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css");
 
 /* Hide Show */
-/* @import url('~/assets/css/styleswitcher/hide-show.css'); */
+@import url("styleswitcher/hide-show.css");
 
 /* Demo */
-/* @import url('~/assets/css/demo.css'); */
+@import url("demo.css");

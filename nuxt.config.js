@@ -38,6 +38,10 @@ export default {
         rel: 'stylesheet',
         href: '/fonts/font-awesome/css/font-awesome.min.css',
       },
+      {
+        rel: 'stylesheet',
+        href: '/css/stylesheet.css',
+      },
     ],
     script: [
       {

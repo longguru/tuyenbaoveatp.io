@@ -1,16 +1,55 @@
 <template>
-  <div class="container">
-    <div v-if="post">
-      <h1 class="title" v-text="post.title" />
-      <div class="content">
-        <block-content
-          v-for="child in post.body"
-          :key="child._id"
-          :blocks="child"
-        />
+  <div v-if="post" class="blog-detail">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-8">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="post">
+                <div class="image">
+                  <img
+                    src="~/assets/images/blog/details/1.jpg"
+                    class="img-responsive"
+                    alt=""
+                  />
+                </div>
+                <h1 v-text="post.title"></h1>
+                <div class="clearfix">
+                  <div class="meta">
+                    <ul>
+                      <li>by <a href="">Admin</a></li>
+                      <li>in <a href="">Photoshop, Graphic Design</a></li>
+                    </ul>
+                  </div>
+                  <div class="like-comment-share">
+                    <ul>
+                      <li class="like">
+                        <a href="" class="like"
+                          ><i class="fa fa-heart"></i>292</a
+                        >
+                      </li>
+                      <li>
+                        <a href=""><i class="fa fa-comment"></i> 21</a>
+                      </li>
+                      <li>
+                        <a href=""><i class="fa fa-share-alt"></i> Share</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="description">
+                  <block-content
+                    v-for="child in post.body"
+                    :key="child._id"
+                    :blocks="child"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <h4><a href="/">← Go back</a></h4>
   </div>
 </template>
 
@@ -24,17 +63,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.container {
-  margin: 2rem;
-  min-height: 100vh;
-}
-.content {
-  margin: 2rem 0;
-  max-width: 38rem;
-}
-p {
-  margin: 1rem 0;
-}
-</style>
