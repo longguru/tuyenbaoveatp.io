@@ -45,6 +45,15 @@ export default {
     ],
     script: [
       {
+        type: 'application/ld+json',
+        json: {
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          url: 'http://tuyenbaoveatp.ga',
+          logo: 'http://tuyenbaoveatp.ga/images/logo.png',
+        },
+      },
+      {
         src:
           'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js',
       },
@@ -83,6 +92,33 @@ export default {
       priority: 1,
       lastmod: new Date(),
     },
+    routes: [
+      {
+        slug: {
+          _type: 'slug',
+          current: '',
+        },
+      },
+      {
+        slug: {
+          _type: 'slug',
+          current: 'tuyen-dung-05-bao-ve-nha-may-tai-kcn-khai-quang',
+        },
+      },
+      {
+        slug: {
+          _type: 'slug',
+          current: 'tuyen-bao-ve-tai-vinh-tuong',
+        },
+      },
+      {
+        slug: {
+          _type: 'slug',
+          current:
+            'tuyen-bao-ve-tai-ha-noi-tim-viec-lam-bao-ve-chinh-thuc-thoi-vu',
+        },
+      },
+    ].map((item) => '/' + item.slug.current),
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
