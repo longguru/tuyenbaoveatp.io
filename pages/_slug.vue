@@ -42,7 +42,21 @@
                         <a href="#"><i class="fa fa-comment"></i> 21</a>
                       </li>
                       <li>
-                        <a href="#"><i class="fa fa-share-alt"></i> Share</a>
+                        <div
+                          class="fb-share-button"
+                          :data-href="
+                            'https://tuyenbaoveatp.ga/' + $route.fullPath
+                          "
+                          data-layout="button_count"
+                          data-size="small"
+                        >
+                          <a
+                            target="_blank"
+                            :href="`https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftuyenbaoveatp.ga%2F${$route.fullPath}&amp;src=sdkpreparse`"
+                            class="fb-xfbml-parse-ignore"
+                            >Chia sẻ</a
+                          >
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -53,6 +67,15 @@
                     :key="child._id"
                     :blocks="child"
                   />
+                  <div
+                    class="fb-like"
+                    :data-href="'https://tuyenbaoveatp.ga/' + $route.fullPath"
+                    data-width=""
+                    data-layout="standard"
+                    data-action="like"
+                    data-size="small"
+                    data-share="true"
+                  ></div>
                 </div>
               </div>
             </div>
