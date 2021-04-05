@@ -107,6 +107,20 @@
       </div>
       <!-- Row 2 Ends -->
     </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SFDXCZ47RJ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-SFDXCZ47RJ')
+    </script>
   </div>
 </template>
 <script>
@@ -128,20 +142,20 @@ export default {
           _id: '44384eba-45a7-4089-bbc7-54ac22c5a78e',
           slug: {
             _type: 'slug',
-            current: 'tuyen-bao-ve-tai-vinh-tuong',
+            current:
+              'tuyen-bao-ve-tai-vinh-tuong-bao-ve-sieu-thi-bigc-vinh-phuc',
           },
-          title:
-            'Tuyển 03 nam/nữ làm nhân viên bảo vệ tại Vĩnh Tường – Vĩnh Phúc',
+          title: 'Tuyển bảo vệ tại vĩnh tường - Bảo vệ Siêu Thị BigC Vĩnh Phúc',
         },
         {
           _id: 'f3c39e0b-8346-4af5-bc4c-0e9d51b5db6d',
           slug: {
             _type: 'slug',
             current:
-              'tuyen-bao-ve-tai-ha-noi-tim-viec-lam-bao-ve-chinh-thuc-thoi-vu',
+              'tuyen-bao-ve-tai-vinh-phuc-tim-viec-lam-bao-ve-chinh-thuc-thoi-vu',
           },
           title:
-            'Tuyển bảo vệ tại Hà Nội, tìm việc làm bảo vệ chính thức thời vụ',
+            'Tuyển bảo vệ tại vĩnh phúc, tìm việc làm bảo vệ chính thức thời vụ',
         },
       ],
       tuKhoas: [

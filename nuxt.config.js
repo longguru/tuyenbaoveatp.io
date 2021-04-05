@@ -94,30 +94,39 @@ export default {
     },
     routes: [
       {
+        _id: '29a39648-4731-4f86-8ecc-8fb2771de26b',
         slug: {
           _type: 'slug',
-          current: '',
+          current: '/',
         },
+        title: 'Vĩnh Yên - Tuyển gấp 5 Nhân viên bảo vệ nhà máy KCN Khai Quang',
       },
       {
+        _id: '29a39648-4731-4f86-8ecc-8fb2771de26b',
         slug: {
           _type: 'slug',
           current:
             'vinh-yen-tuyen-gap-5-nhan-vien-bao-ve-nha-may-kcn-khai-quang',
         },
+        title: 'Vĩnh Yên - Tuyển gấp 5 Nhân viên bảo vệ nhà máy KCN Khai Quang',
       },
       {
+        _id: '44384eba-45a7-4089-bbc7-54ac22c5a78e',
         slug: {
           _type: 'slug',
-          current: 'tuyen-bao-ve-tai-vinh-tuong',
+          current: 'tuyen-bao-ve-tai-vinh-tuong-bao-ve-sieu-thi-bigc-vinh-phuc',
         },
+        title: 'Tuyển bảo vệ tại vĩnh tường - Bảo vệ Siêu Thị BigC Vĩnh Phúc',
       },
       {
+        _id: 'f3c39e0b-8346-4af5-bc4c-0e9d51b5db6d',
         slug: {
           _type: 'slug',
           current:
-            'tuyen-bao-ve-tai-ha-noi-tim-viec-lam-bao-ve-chinh-thuc-thoi-vu',
+            'tuyen-bao-ve-tai-vinh-phuc-tim-viec-lam-bao-ve-chinh-thuc-thoi-vu',
         },
+        title:
+          'Tuyển bảo vệ tại vĩnh phúc, tìm việc làm bảo vệ chính thức thời vụ',
       },
     ].map((item) => '/' + item.slug.current),
   },
