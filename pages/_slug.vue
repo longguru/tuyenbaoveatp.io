@@ -25,7 +25,7 @@
                     <ul>
                       <li>
                         <a
-                          :href="`https://tuyenbaoveatp.ga${$route.fullPath}#ung_tuyen`"
+                          :href="`https://tuyenbaoveatp.ga${$route.fullPath}/#ung_tuyen`"
                           class="btn btn-default"
                           >Ứng tuyển ngay</a
                         >
@@ -48,7 +48,7 @@
                         <div
                           class="fb-share-button"
                           :data-href="
-                            'https://tuyenbaoveatp.ga' + $route.fullPath
+                            'https://tuyenbaoveatp.ga' + $route.fullPath + '/'
                           "
                           data-layout="button_count"
                           data-size="small"
@@ -56,7 +56,7 @@
                           <a
                             target="_blank"
                             :href="`https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftuyenbaoveatp.ga${encodeURI(
-                              $route.fullPath
+                              $route.fullPath + '/'
                             )}&amp;src=sdkpreparse`"
                             class="fb-xfbml-parse-ignore"
                             >Chia sẻ</a
@@ -83,7 +83,9 @@
                   </div>
                   <div
                     class="fb-like"
-                    :data-href="'https://tuyenbaoveatp.ga' + $route.fullPath"
+                    :data-href="
+                      'https://tuyenbaoveatp.ga' + $route.fullPath + '/'
+                    "
                     data-width=""
                     data-layout="button"
                     data-action="like"
@@ -93,7 +95,9 @@
                   <br />
                   <div
                     class="fb-save"
-                    :data-uri="'https://tuyenbaoveatp.ga' + $route.fullPath"
+                    :data-uri="
+                      'https://tuyenbaoveatp.ga' + $route.fullPath + '/'
+                    "
                     data-size="large"
                   ></div>
                 </div>
@@ -161,9 +165,34 @@
             src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=242726457596775&autoLogAppEvents=1"
             nonce="D6wC9xAj"
           ></script>
+          <script>
+            window.fbAsyncInit = function () {
+              FB.init({
+                xfbml: true,
+                version: 'v10.0',
+              })
+            }
+            ;(function (d, s, id) {
+              var js,
+                fjs = d.getElementsByTagName(s)[0]
+              if (d.getElementById(id)) return
+              js = d.createElement(s)
+              js.id = id
+              js.src =
+                'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js'
+              fjs.parentNode.insertBefore(js, fjs)
+            })(document, 'script', 'facebook-jssdk')
+          </script>
+
+          <!-- Your Chat Plugin code -->
+          <div
+            class="fb-customerchat"
+            attribution="setup_tool"
+            page_id="110994124405341"
+          ></div>
           <div
             class="fb-comments"
-            :data-href="'https://tuyenbaoveatp.ga' + $route.fullPath"
+            :data-href="'https://tuyenbaoveatp.ga' + $route.fullPath + '/'"
             data-width=""
             data-numposts="5"
           ></div>

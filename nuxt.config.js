@@ -102,7 +102,8 @@ export default {
       {
         slug: {
           _type: 'slug',
-          current: 'tuyen-dung-05-bao-ve-nha-may-tai-kcn-khai-quang',
+          current:
+            'vinh-yen-tuyen-gap-5-nhan-vien-bao-ve-nha-may-kcn-khai-quang',
         },
       },
       {

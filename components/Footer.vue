@@ -118,10 +118,11 @@ export default {
           _id: '29a39648-4731-4f86-8ecc-8fb2771de26b',
           slug: {
             _type: 'slug',
-            current: 'tuyen-dung-05-bao-ve-nha-may-tai-kcn-khai-quang',
+            current:
+              'vinh-yen-tuyen-gap-5-nhan-vien-bao-ve-nha-may-kcn-khai-quang',
           },
           title:
-            'Tuyển dụng 05 nhân viên bảo vệ nhà máy tại KCN Khai Quang - Vĩnh Yên - Vĩnh Phúc',
+            'Vĩnh Yên - Tuyển gấp 5 Nhân viên bảo vệ nhà máy KCN Khai Quang',
         },
         {
           _id: '44384eba-45a7-4089-bbc7-54ac22c5a78e',
