@@ -67,7 +67,7 @@
               </div>
               <div class="info">
                 <div class="caption">
-                  <a href="">Tôi ở Vĩnh Phúc xin làm bảo vệ được không?</a>
+                  <a href="#">Tôi ở Vĩnh Phúc xin làm bảo vệ được không?</a>
                 </div>
                 <div class="date">
                   Ngày đăng {{ new Date().toLocaleDateString() }}

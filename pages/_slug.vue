@@ -13,20 +13,23 @@
             <div class="col-lg-12">
               <div class="post">
                 <div class="image">
-                  <SanityImage :asset-id="post.imageId" auto="format">
-                    <template #default="{ src }">
-                      <img
-                        :src="src"
-                        class="img-responsive"
-                        :alt="post.title"
-                      />
-                    </template>
-                  </SanityImage>
+                  <img
+                    :src="post.imageUrl"
+                    class="img-responsive"
+                    :alt="post.body[0].children[0].text"
+                  />
                 </div>
                 <h1 v-text="post.title"></h1>
                 <div class="clearfix">
                   <div class="meta">
                     <ul>
+                      <li>
+                        <a
+                          :href="`https://tuyenbaoveatp.ga${$route.fullPath}#ung_tuyen`"
+                          class="btn btn-default"
+                          >Ứng tuyển ngay</a
+                        >
+                      </li>
                       <li>tìm việc <a href="#">Bảo vệ An Thịnh Phát</a></li>
                       <li>việc làm <a href="#">Bảo vệ Vĩnh Phúc</a></li>
                     </ul>
@@ -45,14 +48,16 @@
                         <div
                           class="fb-share-button"
                           :data-href="
-                            'https://tuyenbaoveatp.ga/' + $route.fullPath
+                            'https://tuyenbaoveatp.ga' + $route.fullPath
                           "
                           data-layout="button_count"
                           data-size="small"
                         >
                           <a
                             target="_blank"
-                            :href="`https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftuyenbaoveatp.ga%2F${$route.fullPath}&amp;src=sdkpreparse`"
+                            :href="`https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftuyenbaoveatp.ga${encodeURI(
+                              $route.fullPath
+                            )}&amp;src=sdkpreparse`"
                             class="fb-xfbml-parse-ignore"
                             >Chia sẻ</a
                           >
@@ -67,15 +72,84 @@
                     :key="child._id"
                     :blocks="child"
                   />
+                  <div>
+                    <p>
+                      Bằng cách chia sẻ tin tuyển dụng:
+                      <em>{{ post.title }}</em> bạn đã giúp mình lưu lại cơ hội
+                      việc làm này và giúp người thân, bạn bè của bạn, chúng tôi
+                      được kết nối thêm cơ hội việc làm mới. Chúng tôi rất vui
+                      được kết nối đến bạn khi bạn chia sẻ ngay.
+                    </p>
+                  </div>
                   <div
                     class="fb-like"
-                    :data-href="'https://tuyenbaoveatp.ga/' + $route.fullPath"
+                    :data-href="'https://tuyenbaoveatp.ga' + $route.fullPath"
                     data-width=""
-                    data-layout="standard"
+                    data-layout="button"
                     data-action="like"
                     data-size="small"
                     data-share="true"
                   ></div>
+                  <br />
+                  <div
+                    class="fb-save"
+                    :data-uri="'https://tuyenbaoveatp.ga' + $route.fullPath"
+                    data-size="large"
+                  ></div>
+                </div>
+              </div>
+              <div id="ung_tuyen" class="leave-a-reply">
+                <h3>Ứng tuyển: {{ post.title }}</h3>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="form-group">
+                      <input
+                        id="CommentName"
+                        type="text"
+                        class="form-control"
+                        placeholder="Họ và tên"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="form-group">
+                      <input
+                        id="CommentEmail"
+                        type="email"
+                        class="form-control"
+                        placeholder="Địa chỉ email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="form-group">
+                      <input
+                        id="CommentWebsite"
+                        type="text"
+                        class="form-control"
+                        placeholder="Số điện thoại"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        rows="10"
+                        placeholder="Viết giới thiệu ngắn gọn về bản thân (điểm mạnh, điểm yếu) và nêu rõ mong muốn, lý do làm việc tại công ty này. Đây là cách gây ấn tượng với nhà tuyển dụng nếu bạn có chưa có kinh nghiệm làm việc (hoặc CV không tốt)."
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <button type="submit" class="btn btn-default" disabled>
+                      Nộp hồ sơ
+                    </button>
+                    <br />
+                    <span
+                      >Chức năng đang cập nhật... Mời bạn qua văn phòng công ty
+                      để nộp hồ sơ trực tiếp</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -89,11 +163,12 @@
           ></script>
           <div
             class="fb-comments"
-            :data-href="'https://tuyenbaoveatp.ga/' + $route.fullPath"
+            :data-href="'https://tuyenbaoveatp.ga' + $route.fullPath"
             data-width=""
             data-numposts="5"
           ></div>
         </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 sidebar"></div>
       </div>
     </div>
   </article>
@@ -117,18 +192,22 @@ export default {
           content: this.post.body[0].children[0].text,
         },
       ],
+      __dangerouslyDisableSanitizers: ['script'],
       script: [
         {
           type: 'application/ld+json',
           json: {
             '@context': 'https://schema.org/',
             '@type': 'JobPosting',
-            title: this.post.title,
-            description: this.post.body
-              .map((block) =>
-                block.children.map((child) => child.text).join(' ')
-              )
-              .join(' '),
+            title: this.post.body[1].children[0].text,
+            description:
+              '<p>' +
+              this.post.body
+                .map((block) =>
+                  block.children.map((child) => child.text).join('<br> ')
+                )
+                .join('<br> ') +
+              '</p>',
             identifier: {
               '@type': 'PropertyValue',
               name: 'Hồ Thị Thắm',
@@ -142,8 +221,8 @@ export default {
             hiringOrganization: {
               '@type': 'Organization',
               name: 'Công Ty TNHH Dịch Vụ Bảo Vệ An Thịnh Phát',
-              sameAs: 'http://tuyenbaoveatp.ga',
-              logo: 'http://tuyenbaoveatp.ga/images/logo.png',
+              sameAs: 'https://tuyenbaoveatp.ga',
+              logo: 'https://tuyenbaoveatp.ga/images/logo.png',
             },
             jobLocation: {
               '@type': 'Place',
@@ -151,8 +230,8 @@ export default {
                 '@type': 'PostalAddress',
                 streetAddress:
                   '38, Tổ 13, Phường Trưng Trắc, Thị Xã Phúc Yên, Phường Trưng Trắc, Phúc Yên, Vĩnh Phúc',
-                addressLocality: 'VP',
-                addressRegion: 'VP',
+                addressLocality: 'Vĩnh Phúc',
+                addressRegion: 'Vĩnh Phúc',
                 postalCode: '15906',
                 addressCountry: 'VN',
               },
