@@ -119,6 +119,23 @@ export default {
         title: 'Tuyển bảo vệ tại vĩnh tường - Bảo vệ Siêu Thị BigC Vĩnh Phúc',
       },
       {
+        _id: '5f563ca5-d9a8-4cb8-a0dd-96418cc9b224',
+        slug: {
+          _type: 'slug',
+          current:
+            'cong-ty-bao-ve-tai-vinh-phuc-tuyen-20-bao-ve-kdt-times-gadern',
+        },
+        title: 'Công ty bảo vệ tại Vĩnh Phúc tuyển 20 bảo vệ KĐT Times Gadern',
+      },
+      {
+        _id: '68d0919d-a50e-47dc-996b-7faaa3a36d4e',
+        slug: {
+          _type: 'slug',
+          current: 'vinh-yen-tuyen-03-chi-huy-doi-bao-ve-tai-kcn-khai-quang',
+        },
+        title: 'Vĩnh Yên - Tuyển 03 chỉ huy đội bảo vệ tại KCN Khai Quang',
+      },
+      {
         _id: 'f3c39e0b-8346-4af5-bc4c-0e9d51b5db6d',
         slug: {
           _type: 'slug',
