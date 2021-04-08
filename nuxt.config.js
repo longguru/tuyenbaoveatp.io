@@ -8,14 +8,19 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'tuyenbaoveatp.io',
+    title: 'Công ty An Thịnh Phát tuyển dụng nhân viên bảo vệ ở Vĩnh Phúc',
     htmlAttrs: {
       lang: 'vi',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Tìm việc làm bảo vệ ở Vĩnh Phúc, Công ty TNHH Dịch vụ bảo vệ An Thịnh Phát tuyển dụng nhân viên an ninh & bảo vệ tại Vĩnh Yên, KCN Bá Thiện, KCN Khai Quang',
+      },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
       { name: 'theme-color', content: '#ffffff' },
