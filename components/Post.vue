@@ -21,7 +21,7 @@
         <i class="fa fa-share-alt"></i>
         <a
           target="_blank"
-          :href="`https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=https%3A%2F%2Fvieclambaovedenhat.ga%2F${post.slug.current}%2F&display=popup&ref=plugin&src=share_button`"
+          :href="`https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=https%3A%2F%2Ftuyenbaoveatp.ga%2F${post.slug.current}%2F&display=popup&ref=plugin&src=share_button`"
           >Chia sẻ việc làm</a
         >
       </div>

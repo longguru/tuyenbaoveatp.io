@@ -169,9 +169,8 @@ export default {
   sitemap: {
     hostname: 'https://tuyenbaoveatp.ga',
     defaults: {
-      changefreq: 'daily',
-      priority: 1,
       lastmod: new Date(),
+      priority: 1,
     },
     routes: [
       {
