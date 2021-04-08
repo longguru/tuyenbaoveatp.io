@@ -30,7 +30,7 @@
       </div>
       <div id="navbar-02" class="navbar-collapse collapse">
         <ul class="nav navbar-nav right">
-          <li><nuxt-link to="/">Liên hệ</nuxt-link></li>
+          <li><a href="tel:0978333963">Liên hệ</a></li>
         </ul>
       </div>
     </div>
