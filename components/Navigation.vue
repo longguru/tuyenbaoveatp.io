@@ -30,7 +30,18 @@
       </div>
       <div id="navbar-02" class="navbar-collapse collapse">
         <ul class="nav navbar-nav right">
-          <li><a href="tel:0978333963">Liên hệ</a></li>
+          <li><nuxt-link to="/">Trang chủ</nuxt-link></li>
+          <li><nuxt-link to="/gioi-thieu">Giới thiệu</nuxt-link></li>
+          <li><a href="#">Tin tuyển dụng</a></li>
+          <li><a href="#">Liên hệ</a></li>
+          <li>
+            <a
+              class="btn btn-primary"
+              target="_blank"
+              href="https://zalo.me/0978333963"
+              >Tư vấn</a
+            >
+          </li>
         </ul>
       </div>
     </div>
