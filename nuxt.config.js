@@ -186,6 +186,14 @@ export default {
         _id: '29a39648-4731-4f86-8ecc-8fb2771de26b',
         slug: {
           _type: 'slug',
+          current: '/gioi-thieu',
+        },
+        title: 'Vĩnh Yên - Tuyển gấp 5 Nhân viên bảo vệ nhà máy KCN Khai Quang',
+      },
+      {
+        _id: '29a39648-4731-4f86-8ecc-8fb2771de26b',
+        slug: {
+          _type: 'slug',
           current:
             'vinh-yen-tuyen-gap-5-nhan-vien-bao-ve-nha-may-kcn-khai-quang',
         },
