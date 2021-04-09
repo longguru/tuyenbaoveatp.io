@@ -158,38 +158,7 @@
               </div>
             </div>
           </div>
-          <script
-            async
-            defer
-            crossorigin="anonymous"
-            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=242726457596775&autoLogAppEvents=1"
-            nonce="D6wC9xAj"
-          ></script>
-          <script>
-            window.fbAsyncInit = function () {
-              FB.init({
-                xfbml: true,
-                version: 'v10.0',
-              })
-            }
-            ;(function (d, s, id) {
-              var js,
-                fjs = d.getElementsByTagName(s)[0]
-              if (d.getElementById(id)) return
-              js = d.createElement(s)
-              js.id = id
-              js.src =
-                'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js'
-              fjs.parentNode.insertBefore(js, fjs)
-            })(document, 'script', 'facebook-jssdk')
-          </script>
 
-          <!-- Your Chat Plugin code -->
-          <div
-            class="fb-customerchat"
-            attribution="setup_tool"
-            page_id="110994124405341"
-          ></div>
           <div
             class="fb-comments"
             :data-href="'https://tuyenbaoveatp.ga' + $route.fullPath + '/'"
@@ -200,6 +169,13 @@
         <div class="col-lg-3 col-md-3 col-sm-4 sidebar"></div>
       </div>
     </div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=242726457596775&autoLogAppEvents=1"
+      nonce="D6wC9xAj"
+    ></script>
   </article>
 </template>
 
