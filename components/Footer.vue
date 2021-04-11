@@ -37,7 +37,7 @@
       <div class="row row2">
         <!-- Tags Starts -->
         <div class="col-lg-3 col-md-6 col-sm-6 clearfix tags">
-          <h1>Từ khóa tìm kiếm</h1>
+          <h4 class="tieu-de-chan">Từ khóa tìm kiếm</h4>
           <ul>
             <li v-for="(tuKhoa, index) in tuKhoas" :key="index">
               <a href="#">{{ tuKhoa }}</a>
@@ -47,7 +47,7 @@
         <!-- Tags Ends -->
         <!-- Recent Posts Starts -->
         <div class="col-lg-3 col-md-6 col-sm-6 recent-posts">
-          <h1>Tin tuyển dụng mới nhất</h1>
+          <h4 class="tieu-de-chan">Tin tuyển dụng mới nhất</h4>
           <ul>
             <li v-for="job in jobs" :key="job._id">
               <nuxt-link :to="'/' + job.slug.current">{{
@@ -59,11 +59,14 @@
         <!-- Recent Posts Ends -->
         <!-- From Blog Starts -->
         <div class="col-lg-3 col-md-6 col-sm-6 from-blog">
-          <h1>Xin làm bảo vệ</h1>
+          <h4 class="tieu-de-chan">Xin làm bảo vệ</h4>
           <ul>
             <li class="clearfix">
               <div class="picture">
-                <img src="~/assets/images/blog/footer/1.jpg" alt="" />
+                <img
+                  src="~/assets/images/blog/footer/1.jpg"
+                  alt="Tuyển bảo vệ ở Vĩnh Phúc"
+                />
               </div>
               <div class="info">
                 <div class="caption">
@@ -79,7 +82,7 @@
         <!-- From Blog Ends -->
         <!-- About Us Starts -->
         <div class="col-lg-3 col-md-6 col-sm-6 about">
-          <h1>Tuyển dụng bảo vệ</h1>
+          <h4 class="tieu-de-chan">Tuyển dụng bảo vệ</h4>
           <div class="description">
             <strong
               >Công Ty TNHH Dịch Vụ Bảo Vệ An Thịnh Phát, Mã số thuế:
@@ -259,3 +262,14 @@ export default {
   },
 }
 </script>
+<style scoped>
+.tieu-de-chan {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 30px;
+}
+</style>
