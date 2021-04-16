@@ -168,7 +168,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules '@nuxtjs/sitemap'
   modules: ['@nuxtjs/sitemap'],
-  
+
   sitemap: {
     defaults: {
       changefreq: 'daily',
@@ -184,7 +184,7 @@ export default {
       },
       ...jobs.map((job) => {
         return {
-          url: `/tuyen-dung/${job.slug.current}/`,
+          url: `/${job.slug.current}/`,
         }
       }),
     ],
