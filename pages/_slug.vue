@@ -246,8 +246,8 @@ export default {
               currency: 'VND',
               value: {
                 '@type': 'QuantitativeValue',
-                minValue: 14.0,
-                maxValue: 16.0,
+                minValue: 14000,
+                maxValue: 16000,
                 unitText: 'HOUR',
               },
             },
