@@ -180,6 +180,19 @@
 
       gtag('config', 'G-SFDXCZ47RJ')
     </script>
+    <script id="mcjs">
+      !(function (c, h, i, m, p) {
+        ;(m = c.createElement(h)),
+          (p = c.getElementsByTagName(h)[0]),
+          (m.async = 1),
+          (m.src = i),
+          p.parentNode.insertBefore(m, p)
+      })(
+        document,
+        'script',
+        'https://chimpstatic.com/mcjs-connected/js/users/dafd0f159bea8e5be932061e6/82e7b33165ac47af3b3570a26.js'
+      )
+    </script>
   </div>
 </template>
 <script>
@@ -233,6 +246,16 @@ export default {
           },
           title:
             'Tuyển bảo vệ tại vĩnh phúc, tìm việc làm bảo vệ chính thức thời vụ',
+        },
+        {
+          _id: 'f3c39e0b-8346-4af5-bc4c-0e9d51b5dd',
+          slug: {
+            _type: 'slug',
+            current:
+              'tuyen-dung-phuc-yen-can-tuyen-05-nhan-vien-lam-bao-ve-kho-hang',
+          },
+          title:
+            'Tuyển dụng phúc yên: Cần tuyển 05 nhân viên làm bảo vệ kho hàng',
         },
       ],
       tuKhoas: [
