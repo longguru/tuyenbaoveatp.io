@@ -165,12 +165,6 @@
         style="display: none"
         src="https://www.facebook.com/tr?id=241950547678859&ev=PageView&noscript=1"
     /></noscript>
-    <!-- End Facebook Pixel Code -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-SFDXCZ47RJ"
-    ></script>
     <script>
       window.dataLayer = window.dataLayer || []
       function gtag() {
@@ -192,6 +186,20 @@
         'script',
         'https://chimpstatic.com/mcjs-connected/js/users/dafd0f159bea8e5be932061e6/82e7b33165ac47af3b3570a26.js'
       )
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-201783842-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'UA-201783842-3')
     </script>
   </div>
 </template>
